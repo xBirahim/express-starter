@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <base href="https://example.com/" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Verify Your Email Address</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #e0e0e0;
+                margin: 0;
+                padding: 0;
+                background-color: #121212;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .container {
+                max-width: 600px;
+                width: 100%;
+                background-color: #1e1e1e;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .header {
+                background-color: #2c2c2c;
+                padding: 30px;
+                text-align: center;
+            }
+            .header h1 {
+                color: #ffffff;
+                margin: 0;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .content {
+                padding: 40px 30px;
+            }
+            .greeting {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .username {
+                color: #bb86fc;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            .button {
+                display: inline-block;
+                padding: 12px 24px;
+                background-color: #bb86fc;
+                color: #121212;
+                text-decoration: none;
+                border-radius: 4px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+            .button:hover {
+                background-color: #9965f4;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(187, 134, 252, 0.3);
+            }
+            .footer {
+                background-color: #2c2c2c;
+                padding: 20px;
+                text-align: center;
+                font-size: 12px;
+                color: #808080;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Email Verification</h1>
+            </div>
+            <div class="content">
+                <div class="greeting">Hello <span class="username">{{username}}</span>,</div>
+                <p>
+                    Thank you for joining our platform. To ensure the security of your account and activate all
+                    features, please verify your email address by clicking the button below:
+                </p>
+                <p style="text-align: center">
+                    <a href="{{link}}" class="button">Verify My Email</a>
+                </p>
+                <p>If you didn't create an account on our platform, please disregard this email.</p>
+                <p>Best regards,<br />The Support Team</p>
+            </div>
+            <div class="footer">
+                <p>This is an automated message. Please do not reply.</p>
+                <p>© 2023 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>

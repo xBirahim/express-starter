@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "env": {
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": ["./tsconfig.base.json"]
+    },
+    "plugins": ["import"],
+    "ignorePatterns": [".node_modules/*"],
+    "rules": {
+        "semi": [0, "always"],
+        "quotes": [1, "double"],
+        "object-curly-spacing": [1, "always"],
+        "max-len": [1, { "code": 120 }],
+        "indent": [1, 4],
+        "no-param-reassign": 1,
+        "no-return-assign": 1,
+        "camelcase": 0,
+        "import/extensions": 0
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}

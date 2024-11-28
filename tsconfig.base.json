@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "commonjs",
+        "rootDir": ".",
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["./*"],
+            "@common/*": ["./common/*"],
+            "@modules/*": ["./modules/*"]
+        },
+        "typeRoots": ["./src/common/types", "./node_modules/@types"],
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "incremental": false,
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "ts-node-dev": {
+        "require": ["tsconfig-paths/register"]
+    }
+}
